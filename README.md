@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Historical Events Explorer
 
 A comprehensive web application that provides detailed information, images, and YouTube links for historical events.
@@ -86,3 +87,6 @@ To add more historical events, edit the `src/data/historicalEvents.js` file foll
 ## License
 
 This project is open source and available under the MIT License.
+=======
+# PixelPuranas
+>>>>>>> 877e69b0f0ad0c12422aaad5bf965ec4aad4c9c2
