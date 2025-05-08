@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# Historical Events Explorer
+
+# PIXELPURANAS-Historical Events Explorer
 
 A comprehensive web application that provides detailed information, images, and YouTube links for historical events.
 
@@ -11,6 +11,25 @@ A comprehensive web application that provides detailed information, images, and 
 - **Video Resources**: Access YouTube videos about the events
 - **Suggested Events**: Discover random historical events through suggestions
 - **Recently Viewed**: Keep track of your recently viewed events
+- 🌟 Key Features
+
+Image Recognition: Automatically identifies historical landmarks, artifacts, and significant elements within uploaded images.
+
+Advanced Timelines with Augmented Reality: Visualize detailed timelines related to historical events or objects through an immersive AR experience.
+
+Customized Historical Paths: Generate personalized history journeys based on user interests and input data.
+
+Social Hubs: Connect with other users to discuss historical topics, share insights, and collaboratively explore historical data.
+
+Voice-Activated Guide: Use voice commands to navigate the platform and receive historical insights.
+
+Chatbots for Assistance: Get instant responses to queries about history and site navigation.
+
+Contextual Analysis: Provides insights and related historical context based on image analysis.
+
+Data Aggregation: Pulls data from multiple trusted historical databases to present accurate information.
+
+Interactive UI: Allows users to interact with analyzed data, zoom into timelines, and explore further details.
 
 ## Available Historical Events
 
