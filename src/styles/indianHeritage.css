@@ -1,0 +1,316 @@
+/* Indian Heritage-inspired CSS */
+:root {
+  --deep-saffron: #FF9933;
+  --indigo: #138808;
+  --gold: #DAA520;
+  --maroon: #800000;
+  --cream: #F5F5DC;
+  --light-brown: #D2B48C;
+  --dark-brown: #8B4513;
+  --off-white: #FAF0E6;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--light-brown) 50%, var(--light-brown) 100%);
+  color: var(--dark-brown);
+  margin: 0;
+  padding: 0;
+}
+
+/* Sanskrit-inspired typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif', serif;
+  color: var(--maroon);
+}
+
+/* Ornate borders */
+.ornate-border {
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.ornate-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, var(--deep-saffron), var(--gold), var(--deep-saffron));
+}
+
+/* Card design with traditional motifs */
+.indian-card {
+  background-color: var(--off-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.indian-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23DAA520" opacity="0.2" d="M0,0 C50,20 80,50 100,100 L0,100 Z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/* Buttons with Indian design */
+.indian-button {
+  background: linear-gradient(135deg, var(--deep-saffron) 0%, var(--gold) 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+}
+
+.indian-button:hover {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--deep-saffron) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(139, 69, 19, 0.4);
+}
+
+/* Header with temple-inspired design */
+.temple-header {
+  background: linear-gradient(to right, var(--maroon), var(--deep-saffron));
+  color: white;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.temple-header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path fill="%23800000" d="M0,0 L5,10 L10,0 L15,10 L20,0 L25,10 L30,0 L35,10 L40,0 L45,10 L50,0 L55,10 L60,0 L65,10 L70,0 L75,10 L80,0 L85,10 L90,0 L95,10 L100,0 L100,20 L0,20 Z"/></svg>');
+  background-size: 100px 20px;
+  background-repeat: repeat-x;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-brown);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--maroon);
+}
+
+/* Animation for floating diyas */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+}
+
+.floating-diya {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="%23DAA520"/><circle cx="50" cy="50" r="15" fill="%23FF9933"/><path fill="%23FF9933" d="M50,80 L45,100 L55,100 Z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Glowing mandala effect */
+.mandala {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23DAA520" stroke-width="2"/><circle cx="100" cy="100" r="60" fill="none" stroke="%23DAA520" stroke-width="2"/><circle cx="100" cy="100" r="40" fill="none" stroke="%23DAA520" stroke-width="2"/><circle cx="100" cy="100" r="20" fill="none" stroke="%23DAA520" stroke-width="2"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.mandala::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(218,165,32,0.3) 0%, rgba(218,165,32,0) 70%);
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+/* Ancient scroll style for text sections */
+.scroll-section {
+  background-color: var(--off-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+  border-left: 4px solid var(--deep-saffron);
+  border-right: 4px solid var(--deep-saffron);
+}
+
+.scroll-section::before,
+.scroll-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background-color: var(--cream);
+  border-radius: 50%;
+}
+
+.scroll-section::before {
+  top: -7px;
+}
+
+.scroll-section::after {
+  bottom: -7px;
+}
+
+/* Gallery card for high-resolution photos */
+.photo-gallery-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
+}
+
+.photo-gallery-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo-gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+.photo-gallery-card .caption {
+  padding: 1rem;
+  background: linear-gradient(to right, var(--cream), white);
+  border-top: 2px solid var(--gold);
+}
+
+/* Full-screen photo viewer */
+.fullscreen-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-viewer img {
+  max-width: 90%;
+  max-height: 80vh;
+  box-shadow: 0 0 30px rgba(218, 165, 32, 0.6);
+}
+
+.fullscreen-viewer .caption {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 80%;
+}
+
+/* Carved panel slide animation */
+@keyframes slidePanel {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.carved-panel {
+  position: relative;
+  padding: 1.5rem;
+  background-color: var(--cream);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+  overflow: hidden;
+  animation: slidePanel 0.8s ease-out forwards;
+}
+
+.carved-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="100" fill="none" stroke="%23DAA520" stroke-width="4" stroke-dasharray="10 5"/></svg>');
+  background-size: 50px 50px;
+  opacity: 0.1;
+  pointer-events: none;
+}
